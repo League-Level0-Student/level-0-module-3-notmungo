@@ -6,20 +6,30 @@ import org.jointheleague.graphical.robot.Robot;
 public class WalkOfFame {
 	public static void main(String[] args) {
 		Robot rob = new Robot();
-		
-		// 1. Set the X position of the robot so that it starts on the left. 
+
+		// 1. Set the X position of the robot so that it starts on the left.
 		// You also need to show the robot to see the result of this line.
+		
 
 		// 2. Make the robot draw a star shape. Hint: angle=144.
+		rob.penDown();
+		rob.setSpeed(100);
+		for (int j = 0; j <10; j++) {
+			rob.setX(150 + j * 20);
+		
+		for (int i = 0; i < 5; i++) {
 
-		// 3. Set the length of each line in the star to 30.
-
-		/** THE CHALLENGE: **/
-		/*
-		 * Make the robot draw a line of 10 stars (see recipe to see how it should look)
-		 * 
-		 * Hint: The distance between stars is 50.
-		 */
+			rob.turn(144);
+			rob.move(30);
+			// 3. Set the length of each line in the star to 30.
+             
+		} /** THE CHALLENGE: **/
+		rob.hide(); 
+		}/*
+					 * Make the robot draw a line of 10 stars (see recipe to see how it should look)
+					 * 
+					 * Hint: The distance between stars is 50.
+					 */
 
 	}
 

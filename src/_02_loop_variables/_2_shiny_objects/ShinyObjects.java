@@ -31,9 +31,12 @@ public class ShinyObjects {
 		
 		// 2. Ask the user how many shiny objects they want
 		String shiny = JOptionPane.showInputDialog("How many shiny objects do you want?");
-		
+		int  shiny1 = Integer.parseInt(shiny);
+		System.out.println(shiny1);
 		// 3. Play the sound that many times
-
+        for (int i = 0; i< shiny1; i++ ) {
+        	playMisterZee();
+        }
 
 	}
 
