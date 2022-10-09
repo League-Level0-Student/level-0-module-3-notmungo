@@ -6,11 +6,28 @@ void setup() {
 }
 
 void draw() {
-  
+
   //Starting with the largest ellipse, use a for loop to draw a bullseye with ellipses.
-  ellipse(20,30,50,60);
+  int s = 120;
   
-  //Use an if statement and remainder to alternate the color of your rings.
+  for(int i = 1 ; i <= 20;i++){
+  if (i % 2 ==0) {
+  
+      fill(#FF0000);
+  }
+     else {
+       fill(#0000FF) ;
+     }
+
+
   
   
-}
+  
+  ellipse(240,120,s,s);
+  s = s - 5 ;
+  }
+  
+  //Use an if statement and remainder to alternate the color of your rings
+   
+      
+    }

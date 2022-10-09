@@ -7,11 +7,26 @@ void setup() {
 }
 
 void draw() {
+  int w = 25;
   
+  for ( int i = 1; i <= 79 ; i ++) {
+    
+    if (i % 2 ==0) {
+      fill(#FFFF00);
+
+    }
+    else {
+      fill(#000000) ; 
+    }
+    circle(w,w,25);
+    w = w + 5 ;
+  
+  drawBeeFace(410,400);
 // First run the program and you should see a flower.  
   
   
 /* Then, use a loop to make a body for the Bee! 
+
 (see the image on the recipe, it's a diagonal line of circles)
 Use remainder to make the colors alternate between yellow and black
 */
@@ -23,7 +38,7 @@ Now put his head on using drawBeeFace(x,y)
 */
 
 }
-
+}
 /**************   Use these methods but  DON'T CHANGE THE CODE BELOW  **************/
 
 void drawFlower(int x, int y) {
