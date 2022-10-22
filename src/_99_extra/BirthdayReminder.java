@@ -26,6 +26,7 @@ public class BirthdayReminder {
 		else if (birthday.equals(myBirthday)) {
 			System.out.println(myBirthday);
 		}
+        
 		// 4. if user asked for "mom"
 			//print mom's birthday
 		// 5. if user asked for "dad"
